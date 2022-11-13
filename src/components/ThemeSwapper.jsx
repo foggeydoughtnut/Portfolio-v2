@@ -11,7 +11,7 @@ const ThemeSwapper = () => {
     if (!theme) {
       setInitialDark(true);
     }
-    if (theme === 'business'){
+    if (theme === themes[1]){
       setInitialDark(true);
     }
     setCurrentTheme(theme);
@@ -20,7 +20,7 @@ const ThemeSwapper = () => {
   })
 
   const toggleTheme = () => {
-    let newTheme = currentTheme() === 'garden' ? 'business' : 'garden';
+    let newTheme = currentTheme() === themes[0] ? themes[1] : themes[0];
     setCurrentTheme(newTheme);
     localStorage.setItem('theme', newTheme);
     const htmlTag = document.querySelector('html');
