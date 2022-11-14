@@ -8,9 +8,10 @@ const ProjectCard = (props) => {
 
   return (
     <div class="card lg:w-1/3 w-3/4 bg-base-100 shadow-xl h-auto">
-      <Show when={props.image}>
+      {/* <Show when={props.image}>
         <figure><img src={props.image} alt={props.image} class="content-center" /></figure>
-      </Show>
+      </Show> */}
+      <figure><img src="/public/MyPicture.jpg" alt="/public/MyPicture.jpg" class="content-center" /></figure>
       <div class="card-body">
         <h2 class="card-title">{props.title}</h2>
         <p>{props.body}</p>
