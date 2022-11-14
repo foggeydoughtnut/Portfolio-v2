@@ -1,0 +1,9 @@
+---
+const {JobTitle, Position, TimePeriod} = Astro.props;
+---
+
+<div mb-4>
+  <span class="text-md font-semibold">{JobTitle}</span>
+  <span class="text-sm"> - {Position}</span><br />
+  <span class="text-sm">{TimePeriod}</span>
+</div>

@@ -1,9 +1,71 @@
 ---
 import BaseLayout from "~layouts/BaseLayout.astro";
+import ExperienceInfo from "~components/about/ExperienceInfo.astro";
 ---
 
 <BaseLayout>
-  <div>
-    
+  <div class="flex flex-col items-center gap-6">
+    <div class="card w-1/2 bg-base-100 shadow-xl">
+      <figure><img src="public/MyPicture.JPG" alt="My Picture" class="content-center" /></figure>
+      <div class="card-body">
+        <h2 class="card-title">About Me!</h2>
+        <p>My name is Jeff Anderson. I am a Senior studying Computer Science at Utah State University and will be graduating August 2023.</p>
+      </div>
+    </div>
+    <div class="card w-1/2 bg-base-100 shadow-xl">
+      <div class="card-body">
+        <h2 class="card-title">Experience</h2>
+        <ExperienceInfo 
+          JobTitle="Aspire, USU"
+          Position="Web Developer and Research Assistant"
+          TimePeriod="September 2022 - Present"
+        />
+        <ExperienceInfo 
+          JobTitle="Aidia LLC"
+          Position="Junior Full Stack Web Developer"
+          TimePeriod="May 2022 - October 2022"
+        />
+        <ExperienceInfo 
+          JobTitle="USU IT Networking"
+          Position="Junior Web Developer"
+          TimePeriod="May 2022 - October 2022"
+        />
+      </div>
+    </div>
+    <div class="card w-1/2 bg-base-100 shadow-xl">
+      <div class="card-body">
+        <h2 class="card-title">Skills</h2>
+        <ul>
+          <li class="mb-2">Proficient experience with Javascript for developing React and Solidjs applications.</li>
+          <li class="mb-2">Proficient experience with React, Django, Flask,  Express, and Astro Frameworks.</li>
+          <li class="mb-2">Proficient experience with Sequelize, SQLAlchemy,  and Sqlite for database driven applications.</li>
+          <li class="mb-2">Proficient experience with Python for developing Django and Flask applications.</li>
+          <li class="mb-2">Proficient using Git for version control as a team.</li>
+          <li class="mb-2">Well versed in C# for Game development in Unity.</li>
+          <li>Working knowledge using C++ for Parallel applications and GPU applications</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card w-1/2 bg-base-100 shadow-xl">
+      <div class="card-body">
+        <h2 class="card-title">Education</h2>
+        <ExperienceInfo 
+          JobTitle="Utah State University"
+          Position="Senior in Computer Science (Graduating August 2023)"
+          TimePeriod="August 2020 - Present"
+        />
+        <ExperienceInfo 
+          JobTitle="Mountain View High School"
+          Position="High School Diploma"
+          TimePeriod="August 2017 - May 2020"
+        />
+      </div>
+    </div>
+    <div class="card w-1/2 bg-base-100 shadow-xl">
+      <div class="card-body">
+        <h2 class="card-title">Rewards</h2>
+        <p>First place at Hack-USU 2022 in the Game Development Category</p>
+      </div>
+    </div>
   </div>
 </BaseLayout>
