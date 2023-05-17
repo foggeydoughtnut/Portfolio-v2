@@ -1,9 +1,11 @@
 ---
-const {JobTitle, Position, TimePeriod} = Astro.props;
+const {JobTitle, Position, TimePeriod, Description, Description2} = Astro.props;
 ---
 
 <div mb-4>
   <span class="text-md font-semibold">{JobTitle}</span>
   <span class="text-sm"> - {Position}</span><br />
-  <span class="text-sm">{TimePeriod}</span>
+  <span class="text-sm opacity-60">{TimePeriod}</span><br />
+  <span class="text-md">{Description}</span><br/>
+  <span class="text-md">{Description2}</span>
 </div>

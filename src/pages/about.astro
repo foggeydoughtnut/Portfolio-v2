@@ -9,41 +9,7 @@ import ExperienceInfo from "~components/about/ExperienceInfo.astro";
       <figure><img src="/MyPicture.jpg" alt="My Picture" class="content-center"/></figure>
       <div class="card-body">
         <h2 class="card-title">About Me!</h2>
-        <p>My name is Jeff Anderson. I am a Senior studying Computer Science at Utah State University and will be graduating August 2023.</p>
-      </div>
-    </div>
-    <div class="card w-1/2 bg-base-100 shadow-xl">
-      <div class="card-body">
-        <h2 class="card-title">Experience</h2>
-        <ExperienceInfo
-          JobTitle="Aspire"  
-          Position="Web Developer and Research Assistant"
-          TimePeriod="September 2022 - Present"
-        />
-        <ExperienceInfo 
-          JobTitle="Aidia LLC"
-          Position="Junior Full Stack Web Developer"
-          TimePeriod="May 2022 - October 2022"
-        />
-        <ExperienceInfo 
-          JobTitle="USU IT Networking"
-          Position="Junior Web Developer"
-          TimePeriod="May 2022 - October 2022"
-        />
-      </div>
-    </div>
-    <div class="card w-1/2 bg-base-100 shadow-xl">
-      <div class="card-body">
-        <h2 class="card-title">Skills</h2>
-        <ul>
-          <li class="mb-2">Proficient experience with Javascript for developing React and Solidjs applications.</li>
-          <li class="mb-2">Proficient experience with React, Django, Flask,  Express, and Astro Frameworks.</li>
-          <li class="mb-2">Proficient experience with Sequelize, SQLAlchemy,  and Sqlite for database driven applications.</li>
-          <li class="mb-2">Proficient experience with Python for developing Django and Flask applications.</li>
-          <li class="mb-2">Proficient using Git for version control as a team.</li>
-          <li class="mb-2">Well versed in C# for Game development in Unity.</li>
-          <li>Working knowledge using C++ for Parallel and GPU applications</li>
-        </ul>
+        <p>My name is Jeff Anderson. I am a Senior studying Computer Science at Utah State University and will be graduating with my Bachelors end of June 2023. I am currently working at USU Aspire as a Software Engineer.</p>
       </div>
     </div>
     <div class="card w-1/2 bg-base-100 shadow-xl">
@@ -51,28 +17,86 @@ import ExperienceInfo from "~components/about/ExperienceInfo.astro";
         <h2 class="card-title">Education</h2>
         <ExperienceInfo 
           JobTitle="Utah State University"
-          Position="Senior in Computer Science (Graduating August 2023)"
+          Position="Bachelors in Computer Science (Graduating June 2023)"
           TimePeriod="August 2020 - Present"
         />
+      </div>
+    </div>
+
+    <div class="card w-1/2 bg-base-100 shadow-xl">
+      <div class="card-body">
+        <h2 class="card-title">Experience</h2>
+        <ExperienceInfo
+          JobTitle="USU Aspire"  
+          Position="Full Stack Developer and Research Assistant"
+          TimePeriod="September 2022 - Present"
+          Description="Full stack development utilizing React, Express and Sequelize. Created a REST server capable of handling thousands of requests per second and handles the data flow for Aspire's EVR building to monitor its energy consumption and production. Also, the server handles data from approximately 35 buses in the Salt Lake and Ogden regions in Utah, United States. Built out a visualization front-end to help easily visualize energy consumption."
+          Description2="Robotics research in developing novel exploration and navigation algorithms."
+        />
         <ExperienceInfo 
-          JobTitle="Mountain View High School"
-          Position="High School Diploma"
-          TimePeriod="August 2017 - May 2020"
+          JobTitle="Aidia LLC"
+          Position="Junior Full Stack Web Developer"
+          TimePeriod="May 2022 - October 2022"
+          Description="Full stack development utilizing Astrojs, React, Express and Sequelize."
+        />
+        <ExperienceInfo 
+          JobTitle="USU IT Networking"
+          Position="Junior Web Developer"
+          TimePeriod="May 2022 - October 2022"
+          Description="Web development utilzing tools like Flask and Django."
         />
       </div>
     </div>
     <div class="card w-1/2 bg-base-100 shadow-xl">
       <div class="card-body">
+        <h2 class="card-title">Skills</h2>
+        <ul>
+          <li class="mb-2">Proficient experience with Javascript for developing React and Express applications.</li>
+          <li class="mb-2">Experience working with large scale data management.</li>
+          <li class="mb-2">Proficient experience with Sequelize, Sqlite, and PostgreSQL for database driven applications.</li>
+          <li class="mb-2">Proficient using Git for version control as a team.</li>
+          <li class="mb-2">Proficient experience with Python for algorithm design.</li>
+          <li class="mb-2">Proficient in C# for Game development in Monogame and Unity.</li>
+          <li class="mb-2">Working knowledge using C++ for Parallel and GPU applications.</li>
+          <li>Working knowledge of Computer Graphics utilizing tools like WebGL.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card w-1/2 bg-base-100 shadow-xl">
+      <div class="card-body">
+        <h2 class="card-title">Research</h2>
+        <ExperienceInfo 
+          JobTitle="Stealth Centric Autonomous Robot Simulator (SCARS)"
+          Position="Journal of Software Impacts, Elseview (2023)"
+          TimePeriod="Jeffrey Anderson, Ryan Anderson, Taylor Anderson, Carter Bailey, Mario Harper"
+        />
+        <ExperienceInfo 
+          JobTitle="(In Review) Convolution Based Rapid Frontier Detection for Robot Exploration"
+          Position="International Conference on Intelligent Robots and Systems (IROS), IEEE (2023)"
+          TimePeriod="Taylor Anderson, Jeffrey Anderson, Ryan Anderson, Mario Harper"
+        />
+        <ExperienceInfo 
+          JobTitle="(In Review) Stealth Centric A* (SCA*): Bio-Inspired Navigation for Ground Robots"
+          Position="International Conference on Intelligent Robots and Systems (IROS), IEEE (2023)"
+          TimePeriod="Ryan Anderson, Taylor Anderson, Carter Bailey, Jeffrey Anderson, Mario Harper"
+        />
+      </div>
+    </div>
+    
+    <div class="card w-1/2 bg-base-100 shadow-xl">
+      <div class="card-body">
         <h2 class="card-title">Rewards</h2>
-        <p>First place at Hack-USU 2022 in the Game Development Category</p>
+        <p>Second place at Hack-USU 2023 in Game Development</p>
+        <p>First place at Hack-USU 2022 in Game Development</p>
       </div>
     </div>
     <div class="card w-1/2 bg-base-100 shadow-xl">
       <div class="card-body">
         <h2 class="card-title">Interests/Hobbies</h2>
-        <p>I enjoy learning Japanese and have been doing so for ~2 years now!</p>
-        <p>I enjoy playing video games. My favorite is Destiny 2.</p>
-        <p>I like creating games using things like Unity.</p>
+        <p>I enjoy learning Japanese and have been doing so for ~3 years now!</p>
+        <p>I enjoy playing video games. My favorite is currently Legend of Zelda, Tears of the Kingdom.</p>
+        <p>I like creating games using Monogame and Unity.</p>
         <p></p>
       </div>
     </div>

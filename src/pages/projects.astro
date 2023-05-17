@@ -8,42 +8,58 @@ import BaseLayout from "~layouts/BaseLayout.astro";
     <h1 class="text-5xl font-bold">Previous Projects</h1>
     <h2 class="text-xl font-semibold">Below are my previous projects</h2>
   </div>
-  <div class="flex lg:flex-row flex-col gap-8 flex-wrap items-center justify-center">
-    <ProjectCard 
+  <div
+    class="flex lg:flex-row flex-col gap-8 flex-wrap items-center justify-center"
+  >
+    <ProjectCard
+      client:load
+      title={"Pong"}
+      body={"A Pong replica I created in Monogame following the ECS architectural pattern."}
+      projectLink={"https://github.com/foggeydoughtnut/Pong"}
+      image={"/Pong.png"} 
+    />
+    <ProjectCard
+      client:load
+      title={"Galaga"}
+      body={"A Galaga replica I created in Monogame."}
+      projectLink={"https://github.com/foggeydoughtnut/Galaga"}
+      image={"/Galaga.png"}
+    />
+    <ProjectCard
       client:load
       title={"Vehicle Reservation via Slack"}
       body={"Slack bot developed for USU IT to reserve vehicles using the Outlook API. Used the Flask Python framework to recieve and process the Slack commands. Used Microsoft's Graph API to schedule events on the Vehicle's specifc calendar"}
       projectLink={"https://github.com/foggeydoughtnut/Vehicle-Reservation-Slack"}
     />
-    <ProjectCard 
+    <ProjectCard
       client:load
       title={"Space Guy"}
       body={"This is a top-down 2d game that I created in Unity."}
       projectLink={"https://github.com/foggeydoughtnut/SpaceGuy-Unity"}
       image={"/space-guy.png"}
     />
-    <ProjectCard 
+    <ProjectCard
       client:load
       title={"Mountain Climb"}
       body={"This project used a RL agent to make the car climb up the hill and reach the flag."}
       projectLink={"https://github.com/foggeydoughtnut/mountain-climb"}
       image={"/MountainClimb.png"}
     />
-    <ProjectCard 
+    <ProjectCard
       client:load
       title={"Portfolio Website"}
       body={"This is my portfolio website I created."}
       projectLink={"https://github.com/foggeydoughtnut/Portfolio-v2"}
       image={"/PortfolioSite.png"}
     />
-    <ProjectCard 
+    <ProjectCard
       client:load
       title={"Flash Card App"}
       body={"This is flash card app that I created as a school project for Android"}
       projectLink={"https://github.com/foggeydoughtnut/FlashCardApp"}
       image={"/FlashCardApp.png"}
     />
-    <ProjectCard 
+    <ProjectCard
       client:load
       title={"Tower Defense"}
       body={"This is a tower defense game I made in Unity expanding on a tutorial that I followed."}

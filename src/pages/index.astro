@@ -7,11 +7,12 @@ import ProjectCard from "~components/ProjectCard";
   <div class="flex flex-col gap-8 items-center justify-center">
     <h1 class="text-5xl font-bold">Welcome!</h1>
     <h2 class="text-xl font-semibold">Below is my most recent project</h2>
-    <ProjectCard 
+    <ProjectCard
       client:load
-      title={"Vehicle Reservation via Slack"}
-      body={"Slack bot developed for USU IT to reserve vehicles using the Outlook API. Used the Flask Python framework to recieve and process the Slack commands. Used Microsoft's Graph API to schedule events on the Vehicle's specifc calendar"}
-      projectLink={"https://github.com/foggeydoughtnut/Vehicle-Reservation-Slack"}
+      title={"Pong"}
+      body={"A Pong replica I created in Monogame following the ECS architectural pattern."}
+      projectLink={"https://github.com/foggeydoughtnut/Pong"}
+      image={"/Pong.png"} 
     />
   </div>
 </BaseLayout>
