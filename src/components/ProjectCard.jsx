@@ -14,9 +14,11 @@ const ProjectCard = (props) => {
       <div class="card-body">
         <h2 class="card-title">{props.title}</h2>
         <p>{props.body}</p>
-        <div class="card-actions justify-end">
-          <button class="btn btn-primary" onClick={() => navigateToPage(props.projectLink)}>Learn More</button>
-        </div>
+        <Show when={props.projectLink}>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary" onClick={() => navigateToPage(props.projectLink)}>Learn More</button>
+          </div>
+        </Show>
       </div>
     </div>
   )

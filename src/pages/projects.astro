@@ -13,10 +13,29 @@ import BaseLayout from "~layouts/BaseLayout.astro";
   >
     <ProjectCard
       client:load
+      title={"Aspire Visualization"}
+      body={"A visualization server I created to visualize energy in and outflow as well as Aspire's energy management system. It also shows the Salt Lake City and Ogden electric bus information."}
+      projectLink={"https://github.com/DIRECTLab/evr-visualization-react"}
+      image={"/AspireVisualization.png"}
+    />
+    <ProjectCard
+      client:load
+      title={"Aspire REST API"}
+      body={" I developed A REST API to manage the large amount of data Aspire receives from their energy management system, Salt Lake City and Ogden's Viriciti buses, and Aspire's Electric Vehicle and Roadway building's energy production and consumption. Due to the project being private, I cannot share a link to this project."}
+    />
+    <ProjectCard
+      client:load
+      title={"Charger Reservation Application"}
+      body={"A mobile friendly website I created to reserve electric vehicle chargers."}
+      projectLink={"https://github.com/DIRECTLab/reservation-frontend-web"}
+      image={"/ReservationApplication.png"}
+    />
+    <ProjectCard
+      client:load
       title={"Pong"}
       body={"A Pong replica I created in Monogame following the ECS architectural pattern."}
       projectLink={"https://github.com/foggeydoughtnut/Pong"}
-      image={"/Pong.png"} 
+      image={"/Pong.png"}
     />
     <ProjectCard
       client:load
