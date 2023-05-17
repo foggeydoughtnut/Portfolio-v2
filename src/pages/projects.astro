@@ -20,8 +20,9 @@ import BaseLayout from "~layouts/BaseLayout.astro";
     />
     <ProjectCard
       client:load
-      title={"Aspire REST API"}
-      body={" I developed A REST API to manage the large amount of data Aspire receives from their energy management system, Salt Lake City and Ogden's Viriciti buses, and Aspire's Electric Vehicle and Roadway building's energy production and consumption. Due to the project being private, I cannot share a link to this project."}
+      title={"Aspire REST API and Database"}
+      body={" I developed a REST API to manage the large amount of data Aspire receives from their energy management system, Salt Lake City and Ogden's Viriciti buses, and Aspire's Electric Vehicle and Roadway building's energy production and consumption. Due to the project being private, I cannot share a link to this project."}
+      details={"The REST API has 3 databases. One of them holds all of the energy management system's data, another holds the EVR's data, and the last one holds the bus information. This was done to reduce the load of using the data because we are able to have each database and its respective API on different computers. There is a master API that handles the GET requests and will call the respective API for the information. This master API does not store anything in its database as it is only used to be an easier way to communicate to each API."}
     />
     <ProjectCard
       client:load
